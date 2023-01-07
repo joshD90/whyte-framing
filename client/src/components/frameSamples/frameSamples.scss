@@ -1,0 +1,23 @@
+.frameContainer {
+  display: flex;
+  background: none;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100vw;
+  .frame {
+    max-width: 400px;
+    min-width: 200px;
+    max-height: 400px;
+    min-width: 200px;
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    margin: 3rem;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      transform: scale(1.01);
+    }
+  }
+}

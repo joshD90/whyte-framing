@@ -1,0 +1,58 @@
+.bannerContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .logo {
+    width: 20rem;
+    align-self: flex-start;
+    margin-top: 4rem;
+    @media (max-width: 768px) {
+      align-self: center;
+      width: 15rem;
+    }
+  }
+  .motto {
+    width: 20rem;
+    align-self: flex-end;
+    margin-bottom: 4rem;
+    @media (max-width: 768px) {
+      align-self: center;
+      width: 15rem;
+    }
+  }
+  .frame-piece-bottom {
+    position: absolute;
+    width: 40vw;
+    bottom: 0;
+    right: 0;
+    min-height: 3rem;
+  }
+  .frame-piece-top {
+    position: absolute;
+    width: 40vw;
+    top: 0;
+    left: 0;
+    min-height: 3rem;
+  }
+  .frame-piece-right {
+    position: absolute;
+    height: 60vh;
+    bottom: 0;
+    right: 0;
+    min-width: 3rem;
+  }
+  .frame-piece-left {
+    position: absolute;
+    height: 60vh;
+    left: 0;
+    top: 0;
+    min-width: 3rem;
+  }
+}
