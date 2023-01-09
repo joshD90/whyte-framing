@@ -1,0 +1,38 @@
+//this is the container that stretches the whole width
+.cornerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  width: 100vw;
+  margin-top: 8rem;
+  //for the container that's smaller
+  .insetSquare {
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    position: relative;
+    width: fit-content;
+    //the corner of the frame
+    img {
+      width: 70%;
+    }
+    //the text in the middle of the frame
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(74, 73, 73);
+      font-weight: 600;
+      font-size: 1.5rem;
+      max-width: 15%;
+      text-align: center;
+      @media (max-width: 480px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

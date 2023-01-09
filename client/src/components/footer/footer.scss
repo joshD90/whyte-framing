@@ -1,0 +1,35 @@
+@use "../../utils/sassVariables";
+.footerContainer {
+  min-height: 6rem;
+  background-color: sassVariables.$gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+  .openingDiv {
+    height: 100%;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      line-height: 1.5rem;
+      margin-left: 0;
+      padding-left: 0;
+      li {
+        :first-child {
+          color: black;
+          display: inline-block;
+          width: 4rem;
+        }
+        :last-child {
+          color: white;
+          margin-left: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

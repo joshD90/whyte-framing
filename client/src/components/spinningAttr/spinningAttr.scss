@@ -1,5 +1,15 @@
+@use "../../utils/sassVariables";
+
 .spinningContainer {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: white;
+  padding-bottom: 3rem;
+  //for the dotted divider between divs
+  .spinnerHr {
+    border: none;
+    border-top: dotted 0.3rem sassVariables.$gold;
+    width: 60%;
+    margin-top: 4rem;
+  }
 }

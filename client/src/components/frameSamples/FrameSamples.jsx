@@ -15,9 +15,9 @@ function FrameSamples() {
   ];
   return (
     <div className="frameContainer">
-      {frames.map((frame) => {
+      {frames.map((frame, index) => {
         return (
-          <div className="frame">
+          <div className="frame" key={index}>
             <img src={frame} alt="a sample frame" />
           </div>
         );
