@@ -1,0 +1,43 @@
+@use "../../utils/sassVariables";
+
+.aboutContainer {
+  height: fit-content;
+  min-height: 100vh;
+}
+.profileImg {
+  border-radius: 50%;
+  width: 30%;
+  @media (max-width: 768px) {
+    margin-top: 6rem;
+    width: 40%;
+  }
+}
+.profileExerpt {
+  width: 30%;
+  margin-left: -4rem;
+  margin-top: 2rem;
+  @media (max-width: 768px) {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+  .ellipse {
+    float: left;
+    shape-outside: ellipse(40% 50% at left);
+    margin: 20px;
+    width: 50px;
+    height: 300px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  em {
+    color: sassVariables.$gold;
+    font-style: normal;
+    font-weight: 600;
+  }
+}

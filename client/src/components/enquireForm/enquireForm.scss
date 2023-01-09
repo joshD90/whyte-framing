@@ -1,0 +1,84 @@
+@use "../../utils/sassVariables";
+.enquireContainer {
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  form {
+    all: inherit;
+    padding: 0;
+  }
+  .inputDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    margin-top: 1rem;
+    label {
+      color: gray;
+    }
+    input {
+      height: 2.5rem;
+      width: 100%;
+      padding: 0 0.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      border: 1px solid gray;
+      &::placeholder {
+        font-size: 0.9rem;
+      }
+      &:focus {
+        outline: 1px solid sassVariables.$gold;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 10rem;
+      border-radius: 5px;
+      border: 1px solid gray;
+      margin: 0;
+      padding: 0.5rem;
+      font-family: sans-serif;
+      font-size: 1rem;
+      //   resize: none;
+      &::placeholder {
+        font-size: 0.9rem;
+      }
+      &:focus {
+        outline: 1px solid sassVariables.$gold;
+      }
+    }
+  }
+  button {
+    align-self: flex-end;
+    border: 1px solid black;
+    background-image: linear-gradient(
+      sassVariables.$gold,
+      sassVariables.$goldSemiTransparent
+    );
+    width: 6rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+
+    &:hover {
+      background-image: linear-gradient(
+        sassVariables.$goldSemiTransparent,
+        sassVariables.$gold
+      );
+    }
+  }
+}

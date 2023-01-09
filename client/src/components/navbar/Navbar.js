@@ -1,5 +1,6 @@
 import "./navbar.scss";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [dropped, setDropped] = useState(false);
@@ -34,9 +35,28 @@ function Navbar() {
   return (
     <div className="navContainer">
       <ul style={{ height: height }}>
-        <li>Contact</li>
-        <li>Frame Options</li>
-        <li>Services</li>
+        <Link
+          to="/"
+          style={{ textDecoration: "none" }}
+          onClick={() => setDropped(false)}
+        >
+          <li>Home</li>
+        </Link>
+        <Link
+          to="/enquire"
+          style={{ textDecoration: "none" }}
+          onClick={() => setDropped(false)}
+        >
+          <li>Make Enquiry</li>
+        </Link>
+        <Link
+          to="/about"
+          style={{ textDecoration: "none" }}
+          onClick={() => setDropped(false)}
+        >
+          <li>About</li>
+        </Link>
+        <li>Frame Examples</li>
       </ul>
 
       <div className="burgerDiv" onClick={doDrop}>

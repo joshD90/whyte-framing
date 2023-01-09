@@ -1,4 +1,6 @@
 import "./footer.scss";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
 
 import React from "react";
 
@@ -42,11 +44,15 @@ function Footer() {
       <div className="openingDiv">
         <ul>
           <li>
-            <span>email:</span>
+            <span>
+              <EmailIcon />
+            </span>
             <span>thomaswhyte@whytemedia.come</span>
           </li>
           <li>
-            <span>phone:</span>
+            <span>
+              <PhoneIcon />
+            </span>
             <span>086 1234567</span>
           </li>
         </ul>
